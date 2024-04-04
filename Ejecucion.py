@@ -23,8 +23,8 @@ def Reactor():
 
     
         # Imprimir los nombres de las columnas y los tipos de datos
-        #print("Nombres de columna:", list(df.columns))
-        #print(df.dtypes)
+        print("Nombres de columna:", list(df.columns))
+        print(df.dtypes)
 
         # Patrones a buscar en la columna "Descripción"
         patrones = [r'R1\d\d', r'R2\d\d', r'CR[1-6]',r'MZ11',r'MZ[1-4]',r'MZ',r'CW[1-3]']
@@ -54,8 +54,10 @@ def Reactor():
         
     
         # Cambiar el tipo de datos de la columna 
-        #df['VR Transaccion'] = df['VR Transaccion'].astype('int64')
-        #df['Fecha Transacción'] = df['Fecha Transacción'].astype('int64')
+        df['VR Transaccion'] = df['VR Transaccion'].astype('int64')
+        print("Nombres de columna:", list(df.columns))
+        print(df.dtypes)
+
 
 
         #SE GUARDA EL RESULTADO
